@@ -1,0 +1,1 @@
+# Projeto de Testes Automatizados Web | Ruby | Cucumber | Capybara | SitePrism
