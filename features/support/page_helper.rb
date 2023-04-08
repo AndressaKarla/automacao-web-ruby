@@ -6,6 +6,6 @@ module Pages
     end 
 
     def menus_home
-        @home ||= MenusHome.new
+        @menu ||= MenusHome.new
     end 
 end
