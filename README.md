@@ -181,7 +181,7 @@ bundler exec cucumber
 
 
 ## Abrir o VS Code diretamente na pasta do projeto "automacao-web-ruby"
-- Informar o comando abaixo para abrir o VS Code diretamente na pasta do projeto "automacao-web-ruby"
+- No cmder ou outro terminal de preferência aberto anteriormente, informar o comando abaixo para abrir o VS Code diretamente na pasta do projeto "automacao-web-ruby"
 ```
 code .
 ```
