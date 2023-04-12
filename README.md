@@ -111,14 +111,14 @@ ruby 3.1.2p20 (2022-04-12 revision 4491bb740a) [x64-mingw-ucrt]
   
   
 ## Cucumber versão 8.0.0
-- No cmder ou outro terminal de preferência aberto anteriormente, informar o comando abaixo para para instalar o cucumber versão 8.0.0 
+- No cmder ou outro terminal de preferência aberto anteriormente, informar o comando abaixo para instalar o cucumber versão 8.0.0 
 ```ruby
 gem install cucumber -v 8.0.0
 ```
 
 
 ## Rspec versão 3.12.0
-- No cmder ou outro terminal de preferência aberto anteriormente, informar o comando abaixo para para instalar o rspec versão 3.12.0
+- No cmder ou outro terminal de preferência aberto anteriormente, informar o comando abaixo para instalar o rspec versão 3.12.0
 ```ruby
 gem install rspec -v 3.12.0
 ```
