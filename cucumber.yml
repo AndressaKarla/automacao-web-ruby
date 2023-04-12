@@ -1,4 +1,4 @@
-default: -p pretty --publish-quiet -p html -p dev -p chrome
+default: -p pretty --publish-quiet -p html -p prod -p chrome
 
 pretty: --format pretty
 dev: ENVIRONMENT=dev
