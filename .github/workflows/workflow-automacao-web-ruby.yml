@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ "main" ]
     
-  # permite também executar esse workflow manualmente na aba "Actions" do github
+  # permite também executar esse workflow manualmente na aba "Actions" do GitHub
   workflow_dispatch:
 
 
@@ -16,33 +16,31 @@ permissions:
 
 jobs:
   automacao-web-ruby:
+      # tempo máximo para a execução de uma tarefa antes que o GitHub a cancele automaticamente
       timeout-minutes: 60
       runs-on: ubuntu-latest
 
       steps:
-      - name: Passo 1 - Obter cópia código-fonte repositório
+      - name: Passo 1 - Obter cópia do código-fonte do repositório
         uses: actions/checkout@v3
      
-      - name: Passo 2 - Instalar ruby
+      - name: Passo 2 - Instalar ruby e Instalar dependências 
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1.2'
+          # executa o comando bundle install e armazena as gems instaladas automaticamente
           bundler-cache: true
-          
-      - name: Passo 3 - Instalar dependências
-        run:
-           bundle install
         
-      - name: Passo 4 - Executar testes e gerar relatório html 
+      - name: Passo 3 - Executar testes em modo headless e Gerar relatório html 
         run: 
             bundle exec cucumber -p ci
             
-      - name: Passo 5 - Armazenar relatório html
+      - name: Passo 4 - Armazenar relatório html
         uses: actions/upload-artifact@v3
         # expressão condicional para que sempre seja executado independentemente dos resultados dos steps anteriores
         if: ${{ always() }}
         with: 
             name: reports
             path: ./reports/report.html
+            # armazena o relatório html por 30 dias
             retention-days: 30
-
