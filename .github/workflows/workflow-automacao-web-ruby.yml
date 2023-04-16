@@ -26,19 +26,17 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1.2'
-        
-      - name: Passo 3 - Instalar bundler
-        run: gem install bundler -v 2.3.7
-
-      - name: Passo 4 - Instalar dependências
+          bundler-cache: true
+      
+      - name: Passo 3 - Instalar dependências
         run:
-            bundle install
+            gem install capybara -v 3.38.0 cucumber -v 8.0.0 rspec -v 3.12.0 selenium-webdriver -v 4.6.1 site_prism -v 3.7.3 pry -v 0.14.1
         
-      - name: Passo 5 - Executar testes e gerar relatório html 
+      - name: Passo 4 - Executar testes e gerar relatório html 
         run:
             bundle exec cucumber -p ci
             
-      - name: Passo 6 - Armazenar relatório html
+      - name: Passo 5 - Armazenar relatório html
         uses: actions/upload-artifact@v3
         # expressão condicional para que sempre seja executado independentemente dos resultados dos steps anteriores
         if: ${{ always() }}
