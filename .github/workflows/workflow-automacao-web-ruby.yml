@@ -29,15 +29,15 @@ jobs:
           ruby-version: '3.1.2'
           bundler-cache: true
           
-      - name: Passo 2 - Instalar dependências
+      - name: Passo 3 - Instalar dependências
         run:
-            cd /home/runner/work/automacao-web-ruby/automacao-web-ruby && ls && bundle install
+           bundle install
         
-      - name: Passo 3 - Executar testes e gerar relatório html 
-        run: |
-            cd /home/runner/work/automacao-web-ruby/automacao-web-ruby && ls && bundle exec cucumber -p ci
+      - name: Passo 4 - Executar testes e gerar relatório html 
+        run: 
+            bundle exec cucumber -p ci
             
-      - name: Passo 4 - Armazenar relatório html
+      - name: Passo 5 - Armazenar relatório html
         uses: actions/upload-artifact@v3
         # expressão condicional para que sempre seja executado independentemente dos resultados dos steps anteriores
         if: ${{ always() }}
