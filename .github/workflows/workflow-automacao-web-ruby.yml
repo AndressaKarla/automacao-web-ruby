@@ -5,7 +5,8 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
+    
+  # permite também executar esse workflow manualmente na aba "Actions" do github
   workflow_dispatch:
 
 
@@ -30,7 +31,7 @@ jobs:
       
       - name: Passo 3 - Instalar dependências
         run:
-            gem install capybara -v 3.38.0 cucumber -v 8.0.0 rspec -v 3.12.0 selenium-webdriver -v 4.6.1 site_prism -v 3.7.3 pry -v 0.14.1
+            gem install 'capybara:~>3.38.0' 'cucumber:~>8.0.0' 'rspec:~>3.12.0' 'selenium-webdriver:~>4.6.1' 'site_prism:~>3.7.3' 'pry:~>0.14.1'
         
       - name: Passo 4 - Executar testes e gerar relatório html 
         run:
