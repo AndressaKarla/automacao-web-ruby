@@ -4,11 +4,11 @@ pretty: --format pretty
 dev: ENVIRONMENT=dev
 qa: ENVIRONMENT=qa
 prod: ENVIRONMENT=prod
+ci: -p pretty --publish-quiet -p html -p prod -p chrome_headless 
 
 chrome: BROWSER=chrome
 chrome_headless: BROWSER=chrome_headless
 firefox: BROWSER=firefox
-edge: BROWSER=edge
-headless: BROWSER=headless
+firefox_headless: BROWSER=firefox_headless
 
 html: --format html --out=reports/report.html
