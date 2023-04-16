@@ -162,6 +162,9 @@ C:\Users\usuario\Desktop\automacao-web-ruby
 ```ruby
 bundle install
 ```
+
+
+## Executar os testes automatizados Web
 - Informar o comando abaixo para executar cada cenário individualmente no projeto:
 ```ruby
 cucumber -t @<nome_tag>
@@ -176,7 +179,12 @@ cucumber --tags @menus_home
 ```
 - Ou informar o comando abaixo para executar todos os cenários no projeto:
 ```ruby
-bundler exec cucumber
+bundle exec cucumber
+```
+
+- Ou informar o comando abaixo para executar todos os cenários no projeto em modo headless (2° plano), mesmo modo que será utilizado na integração contínua (CI) no GitHub Actions:
+```ruby
+bundle exec cucumber -p ci
 ```
 
 
@@ -187,6 +195,7 @@ code .
 ```
 - No VS Code aberto, caso seja apresentado "Do you trust the authors on the files in this folder?", marcar a opção "Trust the authors of all files in the parent folder ...."
 	- Clicar no botão "Yes, I trust the authors ...."
+
 
  ## Verificar os screenshots com os resultados das execuções dos testes automatizados Web
 - No VS Code aberto anteriormente, acessar a pasta reports > screenshots > tests_Success > aaaa > month > mm > dd > aa 
@@ -216,11 +225,13 @@ Ex.: reports > screenshots > tests_Failed > 2023 > April > 04 > 08 > 23
 . . .
 - 11-55-23
 ```  
-  
+
+
  ## Verificar o relatório html com os resultados das execuções dos testes automatizados Web
 - No VS Code aberto anteriormente, acessar a pasta "reports" > "report.html" 
 - Clicar com botão direito do mouse sob o arquivo html > Reveal in File Explorer 
 - Na janela do "Windows Explorer" aberta automaticamente, clicar 2 vezes sob o arquivo "report.html" para ser aberto e visualizado no navegador padrão
+
 
 ##
 Feito com ❤️ por <a href="https://www.linkedin.com/in/andressakarla/">Andressa Karla</a> :wave: 
