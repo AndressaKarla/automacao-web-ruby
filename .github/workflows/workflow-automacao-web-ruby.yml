@@ -29,19 +29,17 @@ jobs:
           ruby-version: '3.1.2'
           bundler-cache: true
           
-      - name: Passo 3 - Instalar bundler
-        run: gem install bundler -v 2.3.7
-      
-      - name: Passo 4 - Instalar dependências
-        run:
-            gem install 'capybara:~>3.38.0' 'cucumber:~>8.0.0' 'rspec:~>3.12.0' 'selenium-webdriver:~>4.6.1' 'site_prism:~>3.7.3' 'pry:~>0.14.1'
-        
-      - name: Passo 5 - Executar testes e gerar relatório html 
+      - name: Passo 2 - Instalar dependências
         run: |
             cd /home/runner/work/automacao-web-ruby/automacao-web-ruby
-            ls
+            bundle install
+        
+      - name: Passo 3 - Executar testes e gerar relatório html 
+        run: |
+            cd /home/runner/work/automacao-web-ruby/automacao-web-ruby
+            bundle exec cucumber -p ci
             
-      - name: Passo 6 - Armazenar relatório html
+      - name: Passo 4 - Armazenar relatório html
         uses: actions/upload-artifact@v3
         # expressão condicional para que sempre seja executado independentemente dos resultados dos steps anteriores
         if: ${{ always() }}
