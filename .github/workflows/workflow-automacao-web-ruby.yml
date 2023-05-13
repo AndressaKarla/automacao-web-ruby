@@ -9,11 +9,6 @@ on:
   # permite também executar esse workflow manualmente na aba "Actions" do GitHub
   workflow_dispatch:
 
-
-permissions:
-  contents: read
-
-
 jobs:
   automacao-web-ruby:
       # tempo máximo para a execução de uma tarefa antes que o GitHub a cancele automaticamente
@@ -32,8 +27,7 @@ jobs:
           bundler-cache: true
         
       - name: Passo 3 - Executar testes em modo headless e Gerar relatório html 
-        run: 
-            bundle exec cucumber -p ci
+        run: bundle exec cucumber -p ci
             
       - name: Passo 4 - Armazenar relatório html
         uses: actions/upload-artifact@v3

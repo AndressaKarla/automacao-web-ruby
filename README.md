@@ -198,33 +198,33 @@ code .
 
 
  ## Verificar os screenshots com os resultados das execuções dos testes automatizados Web
-- No VS Code aberto anteriormente, acessar a pasta reports > screenshots > tests_Success > aaaa > month > mm > dd > aa 
+- No VS Code aberto anteriormente, acessar a pasta reports > screenshots > tests_Success > dd_mm_aaaa 
 ```
-- hh1-mm1-ss1
+- nome_cenário1-dd_mm_aaaa-hh1_mm1_ss1.png
   . . .
-- hhx-mmx-ssx
+- nome_cenáriox-dd_mm_aaaa-hhx_mmx_ssx.png
 ```  
   
-Ex.: reports > screenshots > tests_Success > 2023 > April > 04 > 08 > 23
+Ex.: reports > screenshots > tests_Success > 13_05_2023 
 ```
-- 10-36-07
+- validar_redirecionamentos_dos_menus_da_home_page-13_05_2023-03_19_10.png
 . . .
-- 10-36-31
+- validar_redirecionamentos_dos_menus_da_home_page-13_05_2023-03_19_29.png
 ```
   
-- Ou acessar a pasta reports > screenshots > tests_Failed > aaaa > month > mm > dd > aa 
-```  
-hh1-mm1-ss1
-. . .
-hhx-mmx-ssx
+- Ou acessar a pasta reports > screenshots > tests_Failed > dd_mm_aaaa 
+```
+- nome_cenário1-dd_mm_aaaa-hh1_mm1_ss1.png
+  . . .
+- nome_cenáriox-dd_mm_aaaa-hhx_mmx_ssx.png
 ```  
 
-Ex.: reports > screenshots > tests_Failed > 2023 > April > 04 > 08 > 23
-```  
-- 11-54-46
+Ex.: reports > screenshots > tests_Failed > 13_05_2023
+```
+- validar_redirecionamentos_dos_menus_da_home_page-13_05_2023-03_47_21.png
 . . .
-- 11-55-23
-```  
+- validar_redirecionamentos_dos_menus_da_home_page-13_05_2023-03_47_40.png
+``` 
 
 
  ## Verificar o relatório html com os resultados das execuções dos testes automatizados Web
@@ -234,7 +234,7 @@ Ex.: reports > screenshots > tests_Failed > 2023 > April > 04 > 08 > 23
 
 
 ##
-Feito com ❤️ por <a href="https://www.linkedin.com/in/andressakarla/">Andressa Karla</a> :wave: 
+Feito com ❤️ por Andressa Karla :wave: 
 
 [![Medium](https://img.shields.io/badge/-Medium-595D60?style=plastic&logo=Medium&logoColor=white&link=https://medium.com/@andressakarla)](https://medium.com/@andressakarla)
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-595D60?style=plastic&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/andressakarla//)](https://www.linkedin.com/in/andressakarla/)
