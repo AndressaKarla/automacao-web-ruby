@@ -200,9 +200,9 @@ code .
  ## Verificar os screenshots com os resultados das execuções dos testes automatizados Web
 - No VS Code aberto anteriormente, acessar a pasta reports > screenshots > tests_Success > dd_mm_aaaa 
 ```
-- nome_cenário1-dd_mm_aaaa-hh1_mm1_ss1.png
+- nome_cenario1-dd_mm_aaaa-hh1_mm1_ss1.png
   . . .
-- nome_cenáriox-dd_mm_aaaa-hhx_mmx_ssx.png
+- nome_cenariox-dd_mm_aaaa-hhx_mmx_ssx.png
 ```  
   
 Ex.: reports > screenshots > tests_Success > 13_05_2023 
@@ -214,9 +214,9 @@ Ex.: reports > screenshots > tests_Success > 13_05_2023
   
 - Ou acessar a pasta reports > screenshots > tests_Failed > dd_mm_aaaa 
 ```
-- nome_cenário1-dd_mm_aaaa-hh1_mm1_ss1.png
+- nome_cenario1-dd_mm_aaaa-hh1_mm1_ss1.png
   . . .
-- nome_cenáriox-dd_mm_aaaa-hhx_mmx_ssx.png
+- nome_cenariox-dd_mm_aaaa-hhx_mmx_ssx.png
 ```  
 
 Ex.: reports > screenshots > tests_Failed > 13_05_2023

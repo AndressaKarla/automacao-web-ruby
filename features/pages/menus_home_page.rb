@@ -7,10 +7,10 @@ class MenusHome < SitePrism::Page
     element :menu_parceiros, :xpath, './/a[text()="Parceiros"]'
     element :menu_fale_conosco, :xpath, './/a[text()="Fale Conosco"]'
 
-    element :sessao_sobre_nos, :xpath, './/h3[text()="Sobre nós"]'
-    element :sessao_depoimentos, :xpath, './/h3[text()="O Qa.Coders é feito para os alunos"]'
-    element :sessao_parceiros, :xpath, './/h3[text()="Parceiros"]'
-    element :sessao_fale_conosco, :xpath, './/h3[text()="Fale Conosco"]'
+    element :secao_sobre_nos, :xpath, './/h3[text()="Sobre nós"]'
+    element :secao_depoimentos, :xpath, './/h3[text()="O Qa.Coders é feito para os alunos"]'
+    element :secao_parceiros, :xpath, './/h3[text()="Parceiros"]'
+    element :secao_fale_conosco, :xpath, './/h3[text()="Fale Conosco"]'
 
     def clicar_menu(nome_menu)
         if nome_menu == "Sobre nós"
@@ -30,22 +30,22 @@ class MenusHome < SitePrism::Page
         end        
     end
 
-    def validar_sessao_menu(nome_sessao_esperado)
+    def validar_secao_menu(nome_secao_esperado)
         sleep 2
-        if nome_sessao_esperado == "Sobre nós"
-            expect(sessao_sobre_nos).to have_content(nome_sessao_esperado)
+        if nome_secao_esperado == "Sobre nós"
+            expect(secao_sobre_nos).to have_content(nome_secao_esperado)
         end
  
-        if nome_sessao_esperado == "O Qa.Coders é feito para os alunos"
-            expect(sessao_depoimentos).to have_content(nome_sessao_esperado)
+        if nome_secao_esperado == "O Qa.Coders é feito para os alunos"
+            expect(secao_depoimentos).to have_content(nome_secao_esperado)
         end
 
-        if nome_sessao_esperado == "Parceiros"
-            expect(sessao_parceiros).to have_content(nome_sessao_esperado)
+        if nome_secao_esperado == "Parceiros"
+            expect(secao_parceiros).to have_content(nome_secao_esperado)
         end
 
-        if nome_sessao_esperado == "Fale Conosco"
-            expect(sessao_fale_conosco).to have_content(nome_sessao_esperado)
+        if nome_secao_esperado == "Fale Conosco"
+            expect(secao_fale_conosco).to have_content(nome_secao_esperado)
         end
     end
 end
