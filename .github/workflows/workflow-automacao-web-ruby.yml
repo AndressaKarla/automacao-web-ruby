@@ -11,8 +11,6 @@ on:
 
 jobs:
   automacao-web-ruby:
-      # tempo máximo para a execução de uma tarefa antes que o GitHub a cancele automaticamente
-      timeout-minutes: 60
       runs-on: ubuntu-latest
 
       steps:

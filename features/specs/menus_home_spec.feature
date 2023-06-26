@@ -4,7 +4,7 @@
 Funcionalidade: Menus da Home Page
 	Eu como usuário do site do Qa.Coders
 	Quero clicar nos menus da Home Page
-	Para que eu seja redirecionado para as sessões correspondentes
+	Para que eu seja redirecionado para as seções correspondentes
 
 Esquema do Cenario: Validar redirecionamentos dos Menus da Home Page
 	Dado que eu esteja na Home Page
